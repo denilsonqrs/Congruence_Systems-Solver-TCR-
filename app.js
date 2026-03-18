@@ -102,7 +102,7 @@ async function resolverTCR() {
     mudarCorResultado('aguardando');
     try {
         // 2. Chama a API (O garçom)
-        const resposta = await fetch('http://127.0.0.1:8000/api/solve', {
+        const resposta = await fetch('https://congruence-systems-solver-tcr.onrender.com/api/solve', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
